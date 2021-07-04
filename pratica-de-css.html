@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pratica 1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        .card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: 'Roboto', sans-serif;
+        } 
+
+        .description {
+            text-align: center;
+            margin: 5px 2px;
+            font-size: 10px;
+        }
+
+        .price{
+            font-weight: 600;
+        }
+
+        .buy-button{
+            border-radius: 10px;
+            background-color:#fff;
+            border: 1px solid #000;
+            padding: 5px;
+            margin: 5px 0;
+        }
+
+        .buy-button:hover{
+            cursor: pointer;
+            background-color: #000;
+            color: #fff;
+        }
+
+        div {
+            border: 1px solid black;
+            width: 200px;
+        }
+
+        img {
+            width: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <h3 class="product-name">Produto</h3>
+        <img src="https://img.elo7.com.br/product/zoom/27343A7/50-caixas-papelao-21-x-14-x-7-correio-pac-sedex-caixas-transportes.jpg"
+            alt="Caixa de Papelão" title="Caixa de Papelão">
+        <p class="description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris libero enim.
+        </p>
+        <span class="price">Preço: R$XXXX,XX</span>
+        <button class="buy-button">Adicionar ao carrinho</button>
+    </div>
+</body>
+
+</html>

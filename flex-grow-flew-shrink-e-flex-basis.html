@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        largura total: 500px
+        espaço total: -100px
+
+        fator de crescimento do item 1: (2 x 300px) / (600px + 300px) = .667 x -100px = -66.7px
+        fator de crescimento do item 2: (1 x 300px) / (600px + 300px) = .333 x -100px = -33x3px
+        */
+
+        .flex-div{
+            width: 500px;
+            display: flex;
+          }
+
+        .child-div1{
+            border: 1px solid black;
+            flex-basis: 100px;
+            flex-shrink: 2;
+        }
+        .child-div2{
+            border: 1px solid black;
+            flex-basis: 100px;
+            flex-shrink: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-div">
+        <div class="child-div1">
+            1
+        </div>
+        <div class="child-div2">
+            2
+        </div>
+
+    </div>
+</body>
+</html>
